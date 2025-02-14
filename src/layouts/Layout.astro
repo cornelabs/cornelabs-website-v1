@@ -14,7 +14,7 @@ export interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
+  "/cornelabs.png",
   Astro.site
 ).toString();
 
@@ -47,7 +47,7 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Corne Labs - Software Development Company`,
+          title: `Corne Labs - AI & Software Development Agency`,
           image: resolvedImageWithDomain,
         },
         image: {
