@@ -4,7 +4,6 @@ import { Picture } from "astro:assets";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
-import { Icon } from "astro-icon/components";
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
@@ -16,23 +15,23 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
   <Container>
     <Sectionhead>
       <Fragment slot="title">About</Fragment>
-      <Fragment slot="desc"
-        >We are a fast-growing team of passionate innovators.</Fragment
-      >
+      <Fragment slot="desc">We are a fast-growing team of passionate innovators.</Fragment>
     </Sectionhead>
 
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
       <h2 class="font-bold text-3xl text-gray-800">
-        Empowering the world with technology.
+        From initial concept to deployment and ongoing support, you get
+        comprehensive development services, leveraging cutting-edge technologies
+        and industry best practices to drive innovation and success.
       </h2>
       <p class="text-lg leading-relaxed text-slate-500">
-        We are on a mission to build world-class custom software solutions for
-        businesses across the globe. While we start by delivering high-quality
-        software for clients, our long-term vision includes launching a
-        portfolio of SaaS products and AI-driven solutions.<br />
-        Our diverse team brings unique perspectives, experiences, and skills to
-        every project we undertake, making us a dynamic force in the world of
-        software development.
+        We are on a mission to to build intelligent, scalable, and future-ready
+        applications for startups and enterprises across the globe and
+        eventually launching our portfolio of vertical SaaS products, AI Agents
+        and AI-driven solutions.<br />
+        Our diverse team brings unique perspectives, experiences, and skills to every
+        project we undertake, making us a dynamic force in the world of software
+        development.
       </p>
     </div>
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
